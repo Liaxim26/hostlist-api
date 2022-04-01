@@ -9,11 +9,22 @@
     $id = $data['id'];
     $name = $data["name"];
     $ip = $data["ip"];
+    $price = $data["price"];
+    $lastPaymentDate = $data["lastPaymentDate"];
+    $nextPaymentDate = $data["nextPaymentDate"];
+    $specification = $data["specification"];
+    $comment = $data["comment"];
 
     require_once "./config/database.php";
 
-    echo $query = "UPDATE host SET name = '".$name."',
-                    ip = '".$ip."'
+    echo $query = "UPDATE host SET 
+                    name = '".$name."',
+                    ip = '".$ip."',
+                    price = '".$price."',
+                    lastPaymentDate = '".$lastPaymentDate."',
+                    nextPaymentDate = '".$nextPaymentDate."',
+                    specification = '".$specification."',
+                    comment = '".$comment."'
                     WHERE id='".$id."' ";
 
     if(mysqli_query($conn, $query) or die("Update Query Failed")){

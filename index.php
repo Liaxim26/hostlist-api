@@ -1,7 +1,7 @@
 <?php
     header("Content-Type: application/json");
     header("Access-Control-Allow-Origin: *");
-
+    
     require_once "./config/database.php";
 
     $query = 'SELECT * FROM host';
@@ -17,9 +17,9 @@
         // echo json_encode(array("message" => "No Product Found.", "status" => false));
     }
     
-    $text = 'daun';
+    $text = 'vova privet';
     $token = "5200988206:AAGCzpwnt-XER8DFpQ4Ddxjmf3MjFzwrxOQ";
-    bot_send(803988456, $text, $token);
+    // bot_send(803988456, $text, $token);
 
 
     function bot_send($chat_id, $mess, $token)
