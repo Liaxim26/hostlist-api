@@ -1,4 +1,4 @@
-<?php
+<?php 
     header("Content-Type: application/json");
     header("Access-Control-Allow-Origin: *");
     
@@ -17,8 +17,11 @@
         // echo json_encode(array("message" => "No Product Found.", "status" => false));
     }
     
-    $text = 'vova privet';
+    
+
+    $text = 'test cron';
     $token = "5200988206:AAGCzpwnt-XER8DFpQ4Ddxjmf3MjFzwrxOQ";
+    
     //bot_send(803988456, $text, $token);
 
 
